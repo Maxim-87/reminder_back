@@ -126,7 +126,7 @@ exports.Prisma.UserScalarFieldEnum = {
   password: 'password',
   workInterval: 'workInterval',
   breakInterval: 'breakInterval',
-  intervalCount: 'intervalCount'
+  intervalsCount: 'intervalsCount'
 };
 
 exports.Prisma.TaskScalarFieldEnum = {

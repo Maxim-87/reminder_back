@@ -1298,13 +1298,13 @@ export namespace Prisma {
   export type UserAvgAggregateOutputType = {
     workInterval: number | null
     breakInterval: number | null
-    intervalCount: number | null
+    intervalsCount: number | null
   }
 
   export type UserSumAggregateOutputType = {
     workInterval: number | null
     breakInterval: number | null
-    intervalCount: number | null
+    intervalsCount: number | null
   }
 
   export type UserMinAggregateOutputType = {
@@ -1316,7 +1316,7 @@ export namespace Prisma {
     password: string | null
     workInterval: number | null
     breakInterval: number | null
-    intervalCount: number | null
+    intervalsCount: number | null
   }
 
   export type UserMaxAggregateOutputType = {
@@ -1328,7 +1328,7 @@ export namespace Prisma {
     password: string | null
     workInterval: number | null
     breakInterval: number | null
-    intervalCount: number | null
+    intervalsCount: number | null
   }
 
   export type UserCountAggregateOutputType = {
@@ -1340,7 +1340,7 @@ export namespace Prisma {
     password: number
     workInterval: number
     breakInterval: number
-    intervalCount: number
+    intervalsCount: number
     _all: number
   }
 
@@ -1348,13 +1348,13 @@ export namespace Prisma {
   export type UserAvgAggregateInputType = {
     workInterval?: true
     breakInterval?: true
-    intervalCount?: true
+    intervalsCount?: true
   }
 
   export type UserSumAggregateInputType = {
     workInterval?: true
     breakInterval?: true
-    intervalCount?: true
+    intervalsCount?: true
   }
 
   export type UserMinAggregateInputType = {
@@ -1366,7 +1366,7 @@ export namespace Prisma {
     password?: true
     workInterval?: true
     breakInterval?: true
-    intervalCount?: true
+    intervalsCount?: true
   }
 
   export type UserMaxAggregateInputType = {
@@ -1378,7 +1378,7 @@ export namespace Prisma {
     password?: true
     workInterval?: true
     breakInterval?: true
-    intervalCount?: true
+    intervalsCount?: true
   }
 
   export type UserCountAggregateInputType = {
@@ -1390,7 +1390,7 @@ export namespace Prisma {
     password?: true
     workInterval?: true
     breakInterval?: true
-    intervalCount?: true
+    intervalsCount?: true
     _all?: true
   }
 
@@ -1489,7 +1489,7 @@ export namespace Prisma {
     password: string
     workInterval: number | null
     breakInterval: number | null
-    intervalCount: number | null
+    intervalsCount: number | null
     _count: UserCountAggregateOutputType | null
     _avg: UserAvgAggregateOutputType | null
     _sum: UserSumAggregateOutputType | null
@@ -1520,7 +1520,7 @@ export namespace Prisma {
     password?: boolean
     workInterval?: boolean
     breakInterval?: boolean
-    intervalCount?: boolean
+    intervalsCount?: boolean
     tasks?: boolean | User$tasksArgs<ExtArgs>
     timeBlocks?: boolean | User$timeBlocksArgs<ExtArgs>
     pomodoroSessions?: boolean | User$pomodoroSessionsArgs<ExtArgs>
@@ -1536,7 +1536,7 @@ export namespace Prisma {
     password?: boolean
     workInterval?: boolean
     breakInterval?: boolean
-    intervalCount?: boolean
+    intervalsCount?: boolean
   }, ExtArgs["result"]["user"]>
 
   export type UserSelectScalar = {
@@ -1548,7 +1548,7 @@ export namespace Prisma {
     password?: boolean
     workInterval?: boolean
     breakInterval?: boolean
-    intervalCount?: boolean
+    intervalsCount?: boolean
   }
 
   export type UserInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -1575,7 +1575,7 @@ export namespace Prisma {
       password: string
       workInterval: number | null
       breakInterval: number | null
-      intervalCount: number | null
+      intervalsCount: number | null
     }, ExtArgs["result"]["user"]>
     composites: {}
   }
@@ -1980,7 +1980,7 @@ export namespace Prisma {
     readonly password: FieldRef<"User", 'String'>
     readonly workInterval: FieldRef<"User", 'Int'>
     readonly breakInterval: FieldRef<"User", 'Int'>
-    readonly intervalCount: FieldRef<"User", 'Int'>
+    readonly intervalsCount: FieldRef<"User", 'Int'>
   }
     
 
@@ -6294,7 +6294,7 @@ export namespace Prisma {
     password: 'password',
     workInterval: 'workInterval',
     breakInterval: 'breakInterval',
-    intervalCount: 'intervalCount'
+    intervalsCount: 'intervalsCount'
   };
 
   export type UserScalarFieldEnum = (typeof UserScalarFieldEnum)[keyof typeof UserScalarFieldEnum]
@@ -6471,7 +6471,7 @@ export namespace Prisma {
     password?: StringFilter<"User"> | string
     workInterval?: IntNullableFilter<"User"> | number | null
     breakInterval?: IntNullableFilter<"User"> | number | null
-    intervalCount?: IntNullableFilter<"User"> | number | null
+    intervalsCount?: IntNullableFilter<"User"> | number | null
     tasks?: TaskListRelationFilter
     timeBlocks?: TimeBlockListRelationFilter
     pomodoroSessions?: PomodoroSessionListRelationFilter
@@ -6486,7 +6486,7 @@ export namespace Prisma {
     password?: SortOrder
     workInterval?: SortOrderInput | SortOrder
     breakInterval?: SortOrderInput | SortOrder
-    intervalCount?: SortOrderInput | SortOrder
+    intervalsCount?: SortOrderInput | SortOrder
     tasks?: TaskOrderByRelationAggregateInput
     timeBlocks?: TimeBlockOrderByRelationAggregateInput
     pomodoroSessions?: PomodoroSessionOrderByRelationAggregateInput
@@ -6504,7 +6504,7 @@ export namespace Prisma {
     password?: StringFilter<"User"> | string
     workInterval?: IntNullableFilter<"User"> | number | null
     breakInterval?: IntNullableFilter<"User"> | number | null
-    intervalCount?: IntNullableFilter<"User"> | number | null
+    intervalsCount?: IntNullableFilter<"User"> | number | null
     tasks?: TaskListRelationFilter
     timeBlocks?: TimeBlockListRelationFilter
     pomodoroSessions?: PomodoroSessionListRelationFilter
@@ -6519,7 +6519,7 @@ export namespace Prisma {
     password?: SortOrder
     workInterval?: SortOrderInput | SortOrder
     breakInterval?: SortOrderInput | SortOrder
-    intervalCount?: SortOrderInput | SortOrder
+    intervalsCount?: SortOrderInput | SortOrder
     _count?: UserCountOrderByAggregateInput
     _avg?: UserAvgOrderByAggregateInput
     _max?: UserMaxOrderByAggregateInput
@@ -6539,7 +6539,7 @@ export namespace Prisma {
     password?: StringWithAggregatesFilter<"User"> | string
     workInterval?: IntNullableWithAggregatesFilter<"User"> | number | null
     breakInterval?: IntNullableWithAggregatesFilter<"User"> | number | null
-    intervalCount?: IntNullableWithAggregatesFilter<"User"> | number | null
+    intervalsCount?: IntNullableWithAggregatesFilter<"User"> | number | null
   }
 
   export type TaskWhereInput = {
@@ -6808,7 +6808,7 @@ export namespace Prisma {
     password: string
     workInterval?: number | null
     breakInterval?: number | null
-    intervalCount?: number | null
+    intervalsCount?: number | null
     tasks?: TaskCreateNestedManyWithoutUserInput
     timeBlocks?: TimeBlockCreateNestedManyWithoutUserInput
     pomodoroSessions?: PomodoroSessionCreateNestedManyWithoutUserInput
@@ -6823,7 +6823,7 @@ export namespace Prisma {
     password: string
     workInterval?: number | null
     breakInterval?: number | null
-    intervalCount?: number | null
+    intervalsCount?: number | null
     tasks?: TaskUncheckedCreateNestedManyWithoutUserInput
     timeBlocks?: TimeBlockUncheckedCreateNestedManyWithoutUserInput
     pomodoroSessions?: PomodoroSessionUncheckedCreateNestedManyWithoutUserInput
@@ -6838,7 +6838,7 @@ export namespace Prisma {
     password?: StringFieldUpdateOperationsInput | string
     workInterval?: NullableIntFieldUpdateOperationsInput | number | null
     breakInterval?: NullableIntFieldUpdateOperationsInput | number | null
-    intervalCount?: NullableIntFieldUpdateOperationsInput | number | null
+    intervalsCount?: NullableIntFieldUpdateOperationsInput | number | null
     tasks?: TaskUpdateManyWithoutUserNestedInput
     timeBlocks?: TimeBlockUpdateManyWithoutUserNestedInput
     pomodoroSessions?: PomodoroSessionUpdateManyWithoutUserNestedInput
@@ -6853,7 +6853,7 @@ export namespace Prisma {
     password?: StringFieldUpdateOperationsInput | string
     workInterval?: NullableIntFieldUpdateOperationsInput | number | null
     breakInterval?: NullableIntFieldUpdateOperationsInput | number | null
-    intervalCount?: NullableIntFieldUpdateOperationsInput | number | null
+    intervalsCount?: NullableIntFieldUpdateOperationsInput | number | null
     tasks?: TaskUncheckedUpdateManyWithoutUserNestedInput
     timeBlocks?: TimeBlockUncheckedUpdateManyWithoutUserNestedInput
     pomodoroSessions?: PomodoroSessionUncheckedUpdateManyWithoutUserNestedInput
@@ -6868,7 +6868,7 @@ export namespace Prisma {
     password: string
     workInterval?: number | null
     breakInterval?: number | null
-    intervalCount?: number | null
+    intervalsCount?: number | null
   }
 
   export type UserUpdateManyMutationInput = {
@@ -6880,7 +6880,7 @@ export namespace Prisma {
     password?: StringFieldUpdateOperationsInput | string
     workInterval?: NullableIntFieldUpdateOperationsInput | number | null
     breakInterval?: NullableIntFieldUpdateOperationsInput | number | null
-    intervalCount?: NullableIntFieldUpdateOperationsInput | number | null
+    intervalsCount?: NullableIntFieldUpdateOperationsInput | number | null
   }
 
   export type UserUncheckedUpdateManyInput = {
@@ -6892,7 +6892,7 @@ export namespace Prisma {
     password?: StringFieldUpdateOperationsInput | string
     workInterval?: NullableIntFieldUpdateOperationsInput | number | null
     breakInterval?: NullableIntFieldUpdateOperationsInput | number | null
-    intervalCount?: NullableIntFieldUpdateOperationsInput | number | null
+    intervalsCount?: NullableIntFieldUpdateOperationsInput | number | null
   }
 
   export type TaskCreateInput = {
@@ -7257,13 +7257,13 @@ export namespace Prisma {
     password?: SortOrder
     workInterval?: SortOrder
     breakInterval?: SortOrder
-    intervalCount?: SortOrder
+    intervalsCount?: SortOrder
   }
 
   export type UserAvgOrderByAggregateInput = {
     workInterval?: SortOrder
     breakInterval?: SortOrder
-    intervalCount?: SortOrder
+    intervalsCount?: SortOrder
   }
 
   export type UserMaxOrderByAggregateInput = {
@@ -7275,7 +7275,7 @@ export namespace Prisma {
     password?: SortOrder
     workInterval?: SortOrder
     breakInterval?: SortOrder
-    intervalCount?: SortOrder
+    intervalsCount?: SortOrder
   }
 
   export type UserMinOrderByAggregateInput = {
@@ -7287,13 +7287,13 @@ export namespace Prisma {
     password?: SortOrder
     workInterval?: SortOrder
     breakInterval?: SortOrder
-    intervalCount?: SortOrder
+    intervalsCount?: SortOrder
   }
 
   export type UserSumOrderByAggregateInput = {
     workInterval?: SortOrder
     breakInterval?: SortOrder
-    intervalCount?: SortOrder
+    intervalsCount?: SortOrder
   }
 
   export type StringWithAggregatesFilter<$PrismaModel = never> = {
@@ -8203,7 +8203,7 @@ export namespace Prisma {
     password: string
     workInterval?: number | null
     breakInterval?: number | null
-    intervalCount?: number | null
+    intervalsCount?: number | null
     timeBlocks?: TimeBlockCreateNestedManyWithoutUserInput
     pomodoroSessions?: PomodoroSessionCreateNestedManyWithoutUserInput
   }
@@ -8217,7 +8217,7 @@ export namespace Prisma {
     password: string
     workInterval?: number | null
     breakInterval?: number | null
-    intervalCount?: number | null
+    intervalsCount?: number | null
     timeBlocks?: TimeBlockUncheckedCreateNestedManyWithoutUserInput
     pomodoroSessions?: PomodoroSessionUncheckedCreateNestedManyWithoutUserInput
   }
@@ -8247,7 +8247,7 @@ export namespace Prisma {
     password?: StringFieldUpdateOperationsInput | string
     workInterval?: NullableIntFieldUpdateOperationsInput | number | null
     breakInterval?: NullableIntFieldUpdateOperationsInput | number | null
-    intervalCount?: NullableIntFieldUpdateOperationsInput | number | null
+    intervalsCount?: NullableIntFieldUpdateOperationsInput | number | null
     timeBlocks?: TimeBlockUpdateManyWithoutUserNestedInput
     pomodoroSessions?: PomodoroSessionUpdateManyWithoutUserNestedInput
   }
@@ -8261,7 +8261,7 @@ export namespace Prisma {
     password?: StringFieldUpdateOperationsInput | string
     workInterval?: NullableIntFieldUpdateOperationsInput | number | null
     breakInterval?: NullableIntFieldUpdateOperationsInput | number | null
-    intervalCount?: NullableIntFieldUpdateOperationsInput | number | null
+    intervalsCount?: NullableIntFieldUpdateOperationsInput | number | null
     timeBlocks?: TimeBlockUncheckedUpdateManyWithoutUserNestedInput
     pomodoroSessions?: PomodoroSessionUncheckedUpdateManyWithoutUserNestedInput
   }
@@ -8275,7 +8275,7 @@ export namespace Prisma {
     password: string
     workInterval?: number | null
     breakInterval?: number | null
-    intervalCount?: number | null
+    intervalsCount?: number | null
     tasks?: TaskCreateNestedManyWithoutUserInput
     pomodoroSessions?: PomodoroSessionCreateNestedManyWithoutUserInput
   }
@@ -8289,7 +8289,7 @@ export namespace Prisma {
     password: string
     workInterval?: number | null
     breakInterval?: number | null
-    intervalCount?: number | null
+    intervalsCount?: number | null
     tasks?: TaskUncheckedCreateNestedManyWithoutUserInput
     pomodoroSessions?: PomodoroSessionUncheckedCreateNestedManyWithoutUserInput
   }
@@ -8319,7 +8319,7 @@ export namespace Prisma {
     password?: StringFieldUpdateOperationsInput | string
     workInterval?: NullableIntFieldUpdateOperationsInput | number | null
     breakInterval?: NullableIntFieldUpdateOperationsInput | number | null
-    intervalCount?: NullableIntFieldUpdateOperationsInput | number | null
+    intervalsCount?: NullableIntFieldUpdateOperationsInput | number | null
     tasks?: TaskUpdateManyWithoutUserNestedInput
     pomodoroSessions?: PomodoroSessionUpdateManyWithoutUserNestedInput
   }
@@ -8333,7 +8333,7 @@ export namespace Prisma {
     password?: StringFieldUpdateOperationsInput | string
     workInterval?: NullableIntFieldUpdateOperationsInput | number | null
     breakInterval?: NullableIntFieldUpdateOperationsInput | number | null
-    intervalCount?: NullableIntFieldUpdateOperationsInput | number | null
+    intervalsCount?: NullableIntFieldUpdateOperationsInput | number | null
     tasks?: TaskUncheckedUpdateManyWithoutUserNestedInput
     pomodoroSessions?: PomodoroSessionUncheckedUpdateManyWithoutUserNestedInput
   }
@@ -8347,7 +8347,7 @@ export namespace Prisma {
     password: string
     workInterval?: number | null
     breakInterval?: number | null
-    intervalCount?: number | null
+    intervalsCount?: number | null
     tasks?: TaskCreateNestedManyWithoutUserInput
     timeBlocks?: TimeBlockCreateNestedManyWithoutUserInput
   }
@@ -8361,7 +8361,7 @@ export namespace Prisma {
     password: string
     workInterval?: number | null
     breakInterval?: number | null
-    intervalCount?: number | null
+    intervalsCount?: number | null
     tasks?: TaskUncheckedCreateNestedManyWithoutUserInput
     timeBlocks?: TimeBlockUncheckedCreateNestedManyWithoutUserInput
   }
@@ -8417,7 +8417,7 @@ export namespace Prisma {
     password?: StringFieldUpdateOperationsInput | string
     workInterval?: NullableIntFieldUpdateOperationsInput | number | null
     breakInterval?: NullableIntFieldUpdateOperationsInput | number | null
-    intervalCount?: NullableIntFieldUpdateOperationsInput | number | null
+    intervalsCount?: NullableIntFieldUpdateOperationsInput | number | null
     tasks?: TaskUpdateManyWithoutUserNestedInput
     timeBlocks?: TimeBlockUpdateManyWithoutUserNestedInput
   }
@@ -8431,7 +8431,7 @@ export namespace Prisma {
     password?: StringFieldUpdateOperationsInput | string
     workInterval?: NullableIntFieldUpdateOperationsInput | number | null
     breakInterval?: NullableIntFieldUpdateOperationsInput | number | null
-    intervalCount?: NullableIntFieldUpdateOperationsInput | number | null
+    intervalsCount?: NullableIntFieldUpdateOperationsInput | number | null
     tasks?: TaskUncheckedUpdateManyWithoutUserNestedInput
     timeBlocks?: TimeBlockUncheckedUpdateManyWithoutUserNestedInput
   }
