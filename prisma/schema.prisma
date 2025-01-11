@@ -86,7 +86,7 @@ model PomodoroRound {
       createdAt DateTime @default(now()) @map("created_at")
       updatedAt DateTime @default(now()) @map("updated_at")
 
-      totalSeconds Int @map("total_seconds")s
+      totalSeconds Int @map("total_seconds")
       isCompleted Boolean? @default(false) @map("is_completed")
 
         pomodoroSession PomodoroSession @relation(fields: [pomodoroSessionId], references: [id], onDelete: Cascade)

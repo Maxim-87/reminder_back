@@ -1,10 +1,34 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+  UsePipes,
+  ValidationPipe, HttpCode, Put
+} from '@nestjs/common';
 import { UserService } from './user.service';
-import { CreateUserDto } from './dto/create-user.dto';
-import { UpdateUserDto } from './dto/update-user.dto';
+import {Auth} from "@/auth/decorators/auth.decorator";
+import {CurrentUser} from "@/auth/decorators/user.decorator";
+import {UserDto} from "@/user/dto/user.dto";
 
-@Controller('user')
+@Controller('user/profile')
 export class UserController {
   constructor(private readonly userService: UserService) {}
 
+  @Get() // метод запроса
+  @Auth() // декоратор из auth/decorators
+  async profile(@CurrentUser('id') id: string) {
+    return this.userService.getProfile(id)
+  }
+
+  @UsePipes(new ValidationPipe())
+  @HttpCode(200)
+  @Put()
+  @Auth()
+  async updateProfile(@CurrentUser('id') id: string, @Body() dto: UserDto) {
+    return this.userService.update(id, dto)
+  }
 }
